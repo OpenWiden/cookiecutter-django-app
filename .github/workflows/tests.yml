@@ -16,8 +16,6 @@ jobs:
 
       - name: Install poetry
         uses: dschep/install-poetry-action@v1.2
-        with:
-          create_virtualenvs: true
 
       - name: Install dependencies
         run: |
