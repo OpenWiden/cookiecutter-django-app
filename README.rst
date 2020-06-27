@@ -1,6 +1,10 @@
 Cookiecutter Django App
 =======================
 
+.. image:: https://github.com/OpenWiden/cookiecutter-django-app/workflows/Tests/badge.svg
+    :target: https://github.com/OpenWiden/cookiecutter-django-app/actions
+    :alt: Build
+
 Cookiecutter Django App allows you to build modern apps with pre-configured development environment.
 
 Features:
