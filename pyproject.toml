@@ -1,0 +1,19 @@
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "cookiecutter-django-app"
+version = "0.1.0"
+description = "Cookiecutter for Django app."
+authors = ["Alexandr Stefanitsky-Mozdor <stefanitsky.mozdor@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+cookiecutter = "^1.7.2"
+pytest = { version = "^5.4.3", optional = true }
+pytest-cookies = { version = "^0.5.1", optional = true }
+
+[tool.poetry.extras]
+dev = ["pytest", "pytest-cookies"]
