@@ -1,0 +1,37 @@
+name: Tests
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@1
+
+      - name: Setup python 3.7
+        uses: actions/setup-python@1
+        with:
+          python-version: 3.7
+
+      - name: Install poetry
+        uses: dschep/install-poetry-action@v1.2
+        with:
+          create_virtualenvs: true
+
+      - name: Install dependencies
+        run: |
+          poetry install
+          poetry install -E dev
+
+      - name: Cache Poetry virtualenv
+        uses: actions/cache@v1
+        id: cache
+        with:
+          path: ~/.virtualenvs
+          key: poetry-$
+          restore-keys: |
+            poetry-$
+
+      - name: Run tests
+        run: pytest
