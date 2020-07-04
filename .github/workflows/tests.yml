@@ -32,4 +32,4 @@ jobs:
             poetry-$
 
       - name: Run tests
-        run: pytest
+        run: poetry run pytest tests
