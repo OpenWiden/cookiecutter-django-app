@@ -1,0 +1,9 @@
+{
+  "repo_name": "django-app-name",
+  "project_description": "App for Django.",
+  "author": "my_name_or_nick_name",
+  "email": "my_email@email.com",
+  "app_name": "app_name",
+  "app_version": "0.1.0",
+  "app_config_name": "{{ cookiecutter.app_name | replace('_', ' ') | title | replace(' ', '') }}Config"
+}
