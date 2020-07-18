@@ -5,5 +5,9 @@
   "email": "my_email@email.com",
   "app_name": "app_name",
   "app_version": "0.1.0",
-  "app_config_name": "{{ cookiecutter.app_name | replace('_', ' ') | title | replace(' ', '') }}Config"
+  "app_config_name": "{{ cookiecutter.app_name | replace('_', ' ') | title | replace(' ', '') }}Config",
+  "_copy_without_render": [
+    ".github/workflows/release.yml",
+    ".github/workflows/tests.yml"
+  ]
 }
