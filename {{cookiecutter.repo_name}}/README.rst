@@ -1,8 +1,8 @@
 {{cookiecutter.repo_name}}
 =======================================================================
 
-.. image:: https://github.com/OpenWiden/{{cookiecutter.repo_name}}/workflows/Tests/badge.svg?branch=master
-    :target: https://github.com/OpenWiden/{{cookiecutter.repo_name}}/actions
+.. image:: https://github.com/{{cookiecutter.author}}/{{cookiecutter.repo_name}}/workflows/Tests/badge.svg?branch=master
+    :target: https://github.com/{{cookiecutter.author}}/{{cookiecutter.repo_name}}/actions
     :alt: Build
 
 .. image:: https://codecov.io/gh/{{cookiecutter.author}}/{{cookiecutter.repo_name}}/branch/master/graph/badge.svg
