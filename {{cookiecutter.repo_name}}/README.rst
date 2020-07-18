@@ -14,3 +14,5 @@
     :alt: Docs
 
 {{cookiecutter.project_description}}
+
+Docs: https://{{cookiecutter.repo_name}}.readthedocs.io/en/latest/
