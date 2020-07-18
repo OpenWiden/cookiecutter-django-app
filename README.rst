@@ -19,7 +19,7 @@ Features
 Getting started
 ---------------
 
-Create new project::
+1. Create new project::
 
     $ cookiecutter https://github.com/OpenWiden/cookiecutter-django-app
     repo_name [django-app-name]: django-gitlab-webhooks
@@ -30,4 +30,16 @@ Create new project::
     app_version [0.1.0]:
     app_config_name [GitlabWebhooksConfig]:
 
-TODO: push on github, configure codecov, pypi and README badges.
+2. Register on `Codecov https://codecov.io/gh`_ and add `Repository Upload Token` from settings to GitHub repository secrets with name `CODECOV_TOKEN`.
+3. Register on `PyPi <https://pypi.org/>`_, create API token and add it to GitHub repository secrets with name `PYPI_TOKEN`.
+4. Change urls for badges in README.rst if it's required.
+5. Create project repository on `GitHub <https://github.com/new>`_.
+6. Push local repositoriy::
+
+    $ git init
+    $ git add .
+    $ git commit -m ':tada: initial commit'
+    $ git remote add origin https://github.com/{{cookiecutter.author}}/{{cookiecutter.repo_name}}.git
+    $ git push -u origin master
+
+7. Register on `Read the Docs <https://readthedocs.org/>`_ and add your repository for auto docs create.
