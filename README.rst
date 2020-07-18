@@ -13,3 +13,4 @@ Features:
 * `GitHub actions <https://help.github.com/en/actions>`_ - CI / CD for GitHub.
 * Testing with `pytest <https://docs.pytest.org/en/latest/>`_ and `tox <https://tox.readthedocs.io/en/latest/index.html#>`_.
 * Code quality with `black <https://github.com/psf/black>`_ and `isort <https://github.com/timothycrosley/isort>`_.
+* `Shpinx <https://www.sphinx-doc.org/en/master/index.html>`_ docs.
