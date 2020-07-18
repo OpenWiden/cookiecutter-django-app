@@ -1,9 +1,8 @@
-import pytest
 import json
 
+import pytest
 from django.test import RequestFactory
-
-from {{ cookiecutter.app_name }} import views, __version__
+from {{cookiecutter.app_name}} import __version__, views
 
 
 def test_health_check_view(rf: RequestFactory):

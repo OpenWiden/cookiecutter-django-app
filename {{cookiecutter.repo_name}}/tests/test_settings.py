@@ -1,7 +1,6 @@
 import pytest
 from django.core.exceptions import ImproperlyConfigured
-
-from {{ cookiecutter.app_name }} import settings as app_settings
+from {{cookiecutter.app_name}} import settings as app_settings
 
 
 def test_load_settings_success():

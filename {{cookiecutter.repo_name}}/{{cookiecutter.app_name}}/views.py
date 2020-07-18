@@ -1,7 +1,6 @@
 from django import views
-from django.http import JsonResponse, HttpRequest
-
-from {{ cookiecutter.app_name }} import __version__
+from django.http import HttpRequest, JsonResponse
+from {{cookiecutter.app_name}} import __version__
 
 
 class HealthCheckView(views.View):
