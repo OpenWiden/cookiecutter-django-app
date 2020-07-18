@@ -30,7 +30,7 @@ pytest-django = { version = "^3.9.0", optional = true }
 pytest-cov = { version = "^2.1.0", optional = true }
 sphinx = { version = "^3", optional = true }
 black = { version = "^19.10b0", optional = true }
-isort = { version = "^4.3.21", extras = ["pyproject"], optional = true }
+isort = { version = "^5.1.2", extras = ["pyproject"], optional = true }
 
 [tool.poetry.extras]
 docs = ["sphinx"]
@@ -105,5 +105,5 @@ commands = sphinx-build -W -b html -d {envtmpdir}/docs docs {envtmpdir}/docs/_bu
 [testenv:isort]
 extras = isort
 basepython = python3.8
-commands = isort --check-only
+commands = isort . --check-only
 """
