@@ -4,7 +4,7 @@ build-backend = "poetry.masonry.api"
 
 [tool.poetry]
 name = "{{ cookiecutter.repo_name }}"
-version = "1.0.0"
+version = "{{ cookiecutter.app_version }}"
 description = "{{ cookiecutter.project_description }}"
 authors = ["{{ cookiecutter.author }} <{{ cookiecutter.email }}>"]
 readme = "README.rst"
